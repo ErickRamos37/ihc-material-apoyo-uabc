@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los 5 Componentes de la Usabilidad - Tema Claro Formal</title>
+    <style>
+        :root {
+            /* Paleta de colores para tema claro institucional */
+            --primary-color: #1976d2; /* Azul técnico formal, ligeramente más oscuro para contraste */
+            --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%); /* Gris perla sutil */
+            --card-bg: #ffffff; /* Blanco puro para las tarjetas */
+            --text-main: #202124; /* Gris muy oscuro/casi negro para máxima legibilidad */
+            --text-muted: #5f6368; /* Gris medio para el texto descriptivo */
+            --border-color: #dadce0; /* Gris claro para los bordes */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        .diagram-container {
+            /* Ancho máximo para forzar 3 elementos arriba y 2 abajo */
+            max-width: 880px; 
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .diagram-header h2 {
+            color: var(--text-main);
+            font-size: 2.1rem; 
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .diagram-header p {
+            color: var(--primary-color);
+            font-size: 1.15rem;
+            margin-top: 0;
+            margin-bottom: 40px;
+            font-weight: 600; /* Ligeramente más grueso para destacar en fondo claro */
+        }
+
+        .cards-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px; 
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px 20px;
+            width: 255px; 
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            /* Sombra mucho más suave y difuminada, típica del diseño Light Mode */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+        }
+
+        .icon-circle {
+            background-color: rgba(25, 118, 210, 0.08); /* Azul translúcido muy suave */
+            color: var(--primary-color);
+            width: 65px; 
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem; 
+            margin-bottom: 18px;
+        }
+
+        .card h3 {
+            margin: 0 0 12px 0;
+            font-size: 1.25rem;
+            color: var(--text-main);
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="diagram-container">
+        <div class="diagram-header">
+            <h2>Los 5 Componentes de la Usabilidad</h2>
+            <p>Modelo de Atributos de Calidad de Jakob Nielsen</p>
+        </div>
+
+        <div class="cards-wrapper">
+            <div class="card">
+                <div class="icon-circle">🌱</div>
+                <h3>Facilidad de Aprendizaje</h3>
+                <p>¿Qué tan fácil resulta para los usuarios realizar tareas básicas la primera vez que se enfrentan a la interfaz?</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-circle">⚡</div>
+                <h3>Eficiencia</h3>
+                <p>Una vez que los usuarios han aprendido el diseño, ¿qué tan rápido pueden realizar sus tareas?</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-circle">🔄</div>
+                <h3>Memorabilidad</h3>
+                <p>Cuando los usuarios vuelven al diseño tras un periodo, ¿qué tan fácil recuperan su fluidez y destreza?</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-circle">🛡️</div>
+                <h3>Gestión de Errores</h3>
+                <p>¿Cuántos errores cometen los usuarios, qué tan graves son y con qué facilidad pueden recuperarse?</p>
+            </div>
+
+            <div class="card">
+                <div class="icon-circle">✨</div>
+                <h3>Satisfacción</h3>
+                <p>¿Qué tan agradable, cómodo y subjetivamente satisfactorio resulta utilizar el diseño del sistema?</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
